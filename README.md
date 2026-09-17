@@ -34,9 +34,6 @@ Do **not** set `RECALL_LOCAL_BUILD` — this uses the published release, not a l
    so omitting it still produces video.
 4. `startRecording({ windowId, uploadToken })`, then `stopRecording({ windowId })`.
 
-Audio streams straight to S3. The local `recording_path` only receives a copy when
-`RECALLAI_DESKTOP_SDK_DEV` is set, so that directory is normally empty.
-
 ## macOS notes
 
 System audio is the `kTCCServiceAudioCapture` TCC service, which needs
